@@ -1,14 +1,82 @@
+
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
     <title>Weather App</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f2f2f2;
+        margin: 0;
+        padding: 0;
+      }
+
+      .container {
+        max-width: 400px;
+        margin: 90px auto;
+        padding: 20px;
+        background-color: #d9d9d9;
+        border-radius: 5px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      }
+      h1 {
+        text-align: center;
+        color: #333333;
+      }
+
+      form {
+        margin-top: 20px;
+      }
+
+      label {
+        display: block;
+        margin-bottom: 10px;
+        color: #333333;
+        font-weight: bold;
+      }
+
+      input[type="text"] {
+        width: 90%;
+        padding: 10px;
+        font-size: 16px;
+        border: 2px solid #cccccc;
+        border-radius: 4px;
+      }
+
+      button[type="submit"] {
+        display: block;
+        width: 100%;
+        padding: 10px;
+        margin-top: 20px;
+        background-color: #0D7361 ;
+        color: #ffffff;
+        font-size: 16px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+
+      button[type="submit"]:hover {
+        background-color: #067F78;
+
+      }
+
+      body {
+        background-color: #399484;
+        background-image: url("https://w0.peakpx.com/wallpaper/838/591/HD-wallpaper-weather-abej-beograd-rain.jpg");
+      }
+
+    </style>
   </head>
   <body>
-<form action="/" method="post">
-  <label for="cityInput">City Name: </label>
-  <input id="cityInput" type="text" name="cityName">
-<button type="submit">Go</button>
-</form>
+    <div class="container">
+      <h1>Weather App</h1>
+      <form action="/" method="post">
+        <label for="cityInput">City Name:</label>
+        <input id="cityInput" type="text" name="cityName">
+        <button type="submit">Go</button>
+      </form>
+    </div>
   </body>
 </html>
